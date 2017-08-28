@@ -1,6 +1,17 @@
 var GAL = GAL || {};
 
 
+///////////
+// Notes //
+///////////
+
+// Normally each of these modules would be a separate file
+// but since I opted to not have a build process to focus on the
+// actual work itself, they are in one monolithic file. The small
+// upside is that it is much easier to search for things in the 
+// one file. :)
+
+
 GAL.lightbox = (function(GAL){
 
 	var state = {
