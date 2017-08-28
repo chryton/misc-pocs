@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Dat Gallery</title>
+	<link rel="stylesheet" href="assets/normalize.css">
+	<link rel="stylesheet" href="assets/lightbox.css">
+</head>
+<body>
+	<section class="search--form_wrapper">
+		<form action="#" id="search--form">
+			<span class="search--image_engine_wrapper">
+				<select name="search--image_engine" id="search--image_engine">
+					<option value="giphy">Giphy</option>
+					<option value="imgur" disabled>Imgur</option>
+					<option value="flickr" disabled>Flickr</option>
+					<option value="google" disabled>Google Images</option>
+					<option value="placeCage" disabled>Place Cage</option>
+				</select>
+			</span>
+			<input type="text" id="search--query_field" name="search--query_field" placeholder="Search for an image" required>
+			<button type="submit">Start Browsing</button>
+		</form>
+	</section>
+
+	<section class="gallery_grid">
+	</section>
+
+	<aside class="lightbox">
+		<div class="lightbox--overlay"></div>
+		<div class="lightbox--content">
+			<div class="lightbox--close">x</div>
+			<div class="lightbox--info">
+				<span class="url"></span>
+				<span class="source"></span>
+				<span class="rating"></span>
+			</div>
+			<div class="lightbox--prev"></div>
+			<div class="lightbox--next"></div>
+		</div>
+	</aside>
+
+	<script type="text/javascript" src="assets/gallery.js"></script>
+</body>
+</html>
